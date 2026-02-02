@@ -10,6 +10,20 @@ This skill uses `DiscordChatExporter` to fetch recent messages from **ALL** acce
 ## Prerequisites
 
 - **DISCORD_TOKEN**: Must be set in the environment or passed to the script.
+- **DiscordChatExporter (CLI)**: Must be installed in a `dce` subdirectory.
+
+## Installation
+
+1. Download the **CLI version** of DiscordChatExporter from GitHub:
+   [https://github.com/Tyrrrz/DiscordChatExporter/releases](https://github.com/Tyrrrz/DiscordChatExporter/releases)
+   *(Look for `DiscordChatExporter.Cli.linux-x64.zip` or your OS equivalent)*
+
+2. Extract it to a `dce` folder inside this skill's directory:
+   ```bash
+   mkdir -p skills/discord-watcher/dce
+   unzip DiscordChatExporter.Cli.linux-x64.zip -d skills/discord-watcher/dce
+   chmod +x skills/discord-watcher/dce/DiscordChatExporter.Cli
+   ```
 
 ## Usage
 
