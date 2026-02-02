@@ -33,6 +33,8 @@ Run the update script to fetch messages from the last 24 hours across all channe
 ./skills/discord-watcher/update.sh [TOKEN]
 ```
 
+The script can be run from any directory (it auto-detects its location).
+
 This will:
 1. Create a timestamped directory in `exports/updates/`.
 2. Export all new messages (last 24h) from every channel you can see.
